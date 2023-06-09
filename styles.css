@@ -119,8 +119,11 @@ p {
     margin: 1em;
 }
 
+ol, 
 ul {
     padding: 1em;
+    margin-left: 1em;
+    margin-right: 1em;
 }
 
 /* Homepage Selectors */
@@ -171,6 +174,13 @@ ul {
     box-shadow: 1px 2px 8px 1px var(--dark-khaki);
 }
 
+.recipe-description,
+.section-title,
+.subsection-title {
+    margin-left: 2.2em;
+    margin-right: 2.2em;
+}
+
 .recipe-description {
     color: var(--dark-deep-purple);
     padding: 1em;
@@ -184,9 +194,7 @@ ul {
     font-weight: 900;
     text-align: left;
     padding: 1em;
-    margin: 1.4em;
-    margin-left: 2.2em;
-    margin-right: 2.2em;
+    margin: 1em;
     border-bottom: 1px solid var(--dark-khaki-faded);
 }
 
@@ -195,15 +203,15 @@ ul {
     font-size: 1.2em;
     font-weight: 800;
     text-align: left;
-    margin-left: 2.2em;
     padding: 1em;
+    padding-bottom: 0;
 }
 
 .list-container {
     margin: 1em;
     margin-left: 3em;
     margin-right: 3em;
-    padding: 0.8em;
+    padding: 1em;
     line-height: 1.8;
     border-radius: 8px;
     border: 1px solid var(--dark-cherry-blossom-pink-faded);
@@ -213,16 +221,17 @@ ul {
 .additional-info {
     color: var(--dark-deep-purple);
     padding: 1em;
-    padding-left: 4em;
-    padding-right: 4em;
+    margin-left: 4em;
+    margin-right: 4em;
     margin: 1em;
     text-align: center;
     line-height: 1.8;
 }
 
 .non-list-instructions {
-    padding-left: 2.7em;
-    padding-right: 2.7em;
+    margin: 0;
+    margin-left: 3em;
+    margin-right: 3em;
 }
 
 .pro-tips {
