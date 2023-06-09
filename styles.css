@@ -119,6 +119,10 @@ p {
     margin: 1em;
 }
 
+ul {
+    padding: 1em;
+}
+
 /* Homepage Selectors */
 
 .title-card {
@@ -176,25 +180,29 @@ p {
 
 .section-title {
     color: var(--dark-cherry-blossom-pink);
-    font-size: 1.2em;
+    font-size: 1.6em;
     font-weight: 900;
     text-align: left;
     padding: 1em;
-    margin: 2.2em;
-    margin-top: 1.6em;
+    margin: 1.4em;
+    margin-left: 2.2em;
+    margin-right: 2.2em;
     border-bottom: 1px solid var(--dark-khaki-faded);
 }
 
 .subsection-title {
     color: var(--dark-khaki);
-    font-size: 1em;
+    font-size: 1.2em;
     font-weight: 800;
     text-align: left;
-    margin-left: 1.4em;
+    margin-left: 2.2em;
+    padding: 1em;
 }
 
 .list-container {
     margin: 1em;
+    margin-left: 3em;
+    margin-right: 3em;
     padding: 0.8em;
     line-height: 1.8;
     border-radius: 8px;
@@ -205,9 +213,16 @@ p {
 .additional-info {
     color: var(--dark-deep-purple);
     padding: 1em;
-    margin: 0.6em;
+    padding-left: 4em;
+    padding-right: 4em;
+    margin: 1em;
     text-align: center;
     line-height: 1.8;
+}
+
+.non-list-instructions {
+    padding-left: 2.7em;
+    padding-right: 2.7em;
 }
 
 .pro-tips {
