@@ -85,16 +85,18 @@ select {
 
     --light-burnt-sienna: hsla(8, 70%, 78%, 0.7);
     --light-cherry-blossom-pink: hsla(346, 69%, 90%, 0.7);
-    --light-desert-sand: hsla(24, 37%, 95%, 0.7);
+    --light-desert-sand: hsla(24, 27%, 85%, 0.7);
     --light-khaki: hsla(39, 19%, 87%, 0.7);
     --light-deep-purple: hsla(327, 19%, 60%, 0.7);
 
     --burnt-sienna: hsla(8, 70%, 62%, 1);
     --cherry-blossom-pink: hsla(346, 69%, 80%, 1);
-    --desert-sand: hsla(24, 37%, 85%, 1);
+    --desert-sand: hsla(24, 37%, 75%, 1);
     --khaki: hsla(39, 19%, 67%, 1);
     --deep-purple: hsla(327, 19%, 15%, 1);
 
+    --dark-cherry-blossom-pink-faded: hsla(346, 69%, 20%, 0.5);
+    --cherry-blossom-pink-faded: hsla(346, 69%, 80%, 0.25);
     --dark-khaki-faded: hsla(39, 19%, 20%, 0.5);
 }
 
@@ -110,6 +112,11 @@ body {
 
 a {
     color: var(--dark-burnt-sienna);
+}
+
+p {
+    padding: 1em;
+    margin: 1em;
 }
 
 /* Homepage Selectors */
@@ -164,6 +171,7 @@ a {
     color: var(--dark-deep-purple);
     padding: 1em;
     margin: 0.6em;
+    line-height: 1.8; 
 }
 
 .section-title {
@@ -172,7 +180,8 @@ a {
     font-weight: 900;
     text-align: left;
     padding: 1em;
-    margin: 1em;
+    margin: 2.2em;
+    margin-top: 1.6em;
     border-bottom: 1px solid var(--dark-khaki-faded);
 }
 
@@ -183,3 +192,26 @@ a {
     text-align: left;
     margin-left: 1.4em;
 }
+
+.list-container {
+    margin: 1em;
+    padding: 0.8em;
+    line-height: 1.8;
+    border-radius: 8px;
+    border: 1px solid var(--dark-cherry-blossom-pink-faded);
+    box-shadow: inset 0px 0px 8px  var(--cherry-blossom-pink-faded), 0px 0px 8px  var(--khaki);
+}
+
+.additional-info {
+    color: var(--dark-deep-purple);
+    padding: 1em;
+    margin: 0.6em;
+    text-align: center;
+    line-height: 1.8;
+}
+
+.pro-tips {
+    color: var(--dark-cherry-blossom-pink);
+    font-weight: 700;
+}
+
