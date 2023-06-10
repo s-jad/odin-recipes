@@ -104,9 +104,6 @@ select {
     --dark-khaki-faded: hsla(39, 19%, 20%, 0.5);
 }
 
-/* Start of Styles */
-
-
 /* Element Selectors */
 
 body {
@@ -130,6 +127,31 @@ ul {
     padding: 1em;
     margin-left: 1em;
     margin-right: 1em;
+}
+
+nav {
+    min-height: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+nav,
+nav:hover.invisible,
+nav:hover {
+    opacity: 1;
+    content-visibility: visible;
+    transition-property: opacity, content-visibility;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in-out;
+}
+
+nav:not(:hover).invisible {
+    opacity: 0;
+    content-visibility: hidden;
+    transition-property: opacity, content-visibility;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in-out;
 }
 
 /* Homepage Selectors */
@@ -159,13 +181,19 @@ ul {
 }
 
 .recipe-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 45vw);
+    gap: 1em;
     align-items: center;
     justify-content: center;
     margin: 1em;
     padding: 1em;
-    display: grid;
-    grid-template-columns: repeat(2, 45vw);
-    gap: 1em;
+}
+
+.nav-bar-link {
+    margin: 1em;
+    text-align: center;
+    border-right: 1px solid var(--dark-cherry-blossom-pink-faded);
 }
 
 /* General Selectors */
