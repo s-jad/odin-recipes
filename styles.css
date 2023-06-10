@@ -87,9 +87,9 @@ select {
     --dark-khaki: hsla(39, 19%, 20%, 1);
     --dark-deep-purple: hsla(327, 19%, 12%, 1);
 
-    --light-burnt-sienna: hsla(8, 70%, 78%, 0.7);
+    --light-burnt-sienna: hsla(8, 70%, 78%, 1);
     --light-cherry-blossom-pink: hsla(346, 69%, 90%, 0.7);
-    --light-desert-sand: hsla(24, 27%, 85%, 0.7);
+    --light-desert-sand: hsla(24, 27%, 85%, 1);
     --light-khaki: hsla(39, 19%, 87%, 0.7);
     --light-deep-purple: hsla(327, 19%, 60%, 0.7);
 
@@ -103,9 +103,7 @@ select {
     --cherry-blossom-pink-faded: hsla(346, 69%, 80%, 0.25);
     --dark-khaki-faded: hsla(39, 19%, 20%, 0.5);
     --light-desert-sand-faded-100: hsla(24, 27%, 85%, 0.1);
-    --light-burnt-sienna-faded-500: hsla(8, 70%, 78%, 0.5);
     --light-burnt-sienna-faded-300: hsla(8, 70%, 78%, 0.3);
-    --light-burnt-sienna-faded-100: hsla(8, 70%, 78%, 0.1);
 }
 
 /* Element Selectors */
@@ -179,6 +177,9 @@ ul * {
 /* General Selectors */
 
 .nav-bar {
+    position: fixed;
+    top: 0;
+    width: 100%;
     min-height: 20px;
     display: flex;
     flex-direction: row;
@@ -188,7 +189,7 @@ ul * {
 .nav-bar,
 .nav-bar:hover.invisible,
 .nav-bar:hover {
-    background: linear-gradient(180deg, var(--light-burnt-sienna-faded-500), var(--light-burnt-sienna-faded-300), var(--light-desert-sand), var(--light-desert-sand-faded-100));
+    background: linear-gradient(180deg, var(--light-burnt-sienna) 40%, var(--light-desert-sand) 90%, var(--light-desert-sand-faded-100));
     opacity: 1;
     content-visibility: visible;
     transition-property: opacity, content-visibility;
@@ -205,9 +206,10 @@ ul * {
 }
 
 .nav-bar-link,
+.nav-bar-link-home,
 .nav-bar-link-last {
+    flex: 1 2 0%;
     margin: 0.5em 1em 0.5em 1em;
-    flex: 1;
     text-align: center;
 }
 
