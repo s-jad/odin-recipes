@@ -112,6 +112,8 @@ body {
 
 a {
     color: var(--dark-burnt-sienna);
+    display: inline-block;
+    padding: 1em;
 }
 
 p {
