@@ -102,6 +102,10 @@ select {
     --dark-cherry-blossom-pink-faded: hsla(346, 69%, 20%, 0.5);
     --cherry-blossom-pink-faded: hsla(346, 69%, 80%, 0.25);
     --dark-khaki-faded: hsla(39, 19%, 20%, 0.5);
+    --light-desert-sand-faded-100: hsla(24, 27%, 85%, 0.1);
+    --light-burnt-sienna-faded-500: hsla(8, 70%, 78%, 0.5);
+    --light-burnt-sienna-faded-300: hsla(8, 70%, 78%, 0.3);
+    --light-burnt-sienna-faded-100: hsla(8, 70%, 78%, 0.1);
 }
 
 /* Element Selectors */
@@ -120,6 +124,7 @@ a {
 p {
     padding: 1em;
     margin: 1em;
+    line-height: 2;
 }
 
 ol, 
@@ -129,29 +134,9 @@ ul {
     margin-right: 1em;
 }
 
-nav {
-    min-height: 20px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-}
-
-nav,
-nav:hover.invisible,
-nav:hover {
-    opacity: 1;
-    content-visibility: visible;
-    transition-property: opacity, content-visibility;
-    transition-duration: 0.5s;
-    transition-timing-function: ease-in-out;
-}
-
-nav:not(:hover).invisible {
-    opacity: 0;
-    content-visibility: hidden;
-    transition-property: opacity, content-visibility;
-    transition-duration: 0.5s;
-    transition-timing-function: ease-in-out;
+ol *,
+ul * {
+    padding-bottom: 1em;
 }
 
 /* Homepage Selectors */
@@ -161,11 +146,12 @@ nav:not(:hover).invisible {
     padding: 1em;
     font-family: "CaskaydiaCove Nerd Font", "Arial", san-serif;
     border: 2px solid var(--khaki);
+    background: var(--light-burnt-sienna-faded-100);
     border-radius: 8px;
     margin: 2em;
     padding-top: 0em;
     padding-bottom: 1em;
-    box-shadow: 1px 2px 8px 1px var(--dark-khaki);
+    box-shadow: inset 1px 2px 8px 1px var(--light-burnt-sienna-faded-300), 1px 2px 8px 1px var(--dark-khaki);
 }
 
 .main-title {
@@ -190,13 +176,40 @@ nav:not(:hover).invisible {
     padding: 1em;
 }
 
+/* General Selectors */
+
+.nav-bar {
+    min-height: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.nav-bar,
+.nav-bar:hover.invisible,
+.nav-bar:hover {
+    background: linear-gradient(180deg, var(--light-burnt-sienna-faded-500), var(--light-burnt-sienna-faded-300), var(--light-desert-sand), var(--light-desert-sand-faded-100));
+    opacity: 1;
+    content-visibility: visible;
+    transition-property: opacity, content-visibility;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in-out;
+}
+
+.nav-bar:not(:hover).invisible {
+    opacity: 0;
+    content-visibility: hidden;
+    transition-property: opacity, content-visibility;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in-out;
+}
+
 .nav-bar-link {
-    margin: 1em;
+    margin: 0.5em 1em 0.5em 1em;
+    padding-right: 2.2em;
     text-align: center;
     border-right: 1px solid var(--dark-cherry-blossom-pink-faded);
 }
-
-/* General Selectors */
 
 .recipe-name {
     color: var(--dark-deep-purple);
@@ -205,7 +218,7 @@ nav:not(:hover).invisible {
     padding: 1em;
     border: 2px solid var(--khaki);
     border-radius: 8px;
-    box-shadow: 1px 2px 8px 1px var(--dark-khaki);
+    box-shadow: inset 1px 2px 8px 1px var(--light-burnt-sienna-faded-300), 1px 2px 8px 1px var(--dark-khaki);
 }
 
 .recipe-description,
