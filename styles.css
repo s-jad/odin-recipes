@@ -124,7 +124,7 @@ a {
 p {
     padding: 1em;
     margin: 1em;
-    line-height: 2;
+    line-height: 2.2;
 }
 
 ol, 
@@ -204,10 +204,14 @@ ul * {
     transition-timing-function: ease-in-out;
 }
 
-.nav-bar-link {
+.nav-bar-link,
+.nav-bar-link-last {
     margin: 0.5em 1em 0.5em 1em;
-    padding-right: 2.2em;
+    flex: 1;
     text-align: center;
+}
+
+.nav-bar-link {
     border-right: 1px solid var(--dark-cherry-blossom-pink-faded);
 }
 
@@ -232,7 +236,7 @@ ul * {
     color: var(--dark-deep-purple);
     padding: 1em;
     margin: 0.6em;
-    line-height: 1.8; 
+    line-height: 2.2; 
 }
 
 .section-title {
